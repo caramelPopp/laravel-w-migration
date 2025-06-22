@@ -14,6 +14,11 @@ export default {
             fontFamily: {
                 sans: ['Figtree', ...defaultTheme.fontFamily.sans],
             },
+            colors: {
+                'etec-red': '#941611',
+                'etec-gray-dark': '#4A555C',
+                'etec-gray-light': '#F4F4F4',
+            },
         },
     },
 

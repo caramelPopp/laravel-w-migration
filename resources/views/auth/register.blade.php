@@ -1,11 +1,16 @@
 <x-guest-layout>
+    <div>
+        <h2 class="text-xl font-bold text-etec-red text-rigth mb-6">
+            Cadastre-se e comece sua jornada, estudante!
+        </h2>
+    </div>
     <form method="POST" action="{{ route('register') }}">
         @csrf
 
         <!-- Name -->
         <div>
             <x-input-label for="name" :value="__('Nome')" />
-            <x-text-input id="name" class="block mt-1 w-full" type="text" name="name" :value="old('name')" required autofocus autocomplete="name" />
+            <x-text-input id="name" class="block mt-1 w-full focus:border-etec-red" type="text" name="name" :value="old('name')" required autofocus autocomplete="name" />
             <x-input-error :messages="$errors->get('name')" class="mt-2" />
         </div>
 
@@ -44,8 +49,8 @@
                 {{ __('Já possui uma conta?') }}
             </a>
 
-            <x-primary-button class="ms-4">
-                {{ __('Registrar') }}
+            <x-primary-button class="bg-etec-red text-white ms-4 hover:bg-red-700 transition">
+                {{ __('Cadastrar') }}
             </x-primary-button>
         </div>
     </form>
