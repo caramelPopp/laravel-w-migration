@@ -20,7 +20,7 @@ SET time_zone = "+00:00";
 --
 -- Banco de dados: `laravel_w_migration`
 create database `laravel_w_migration`;
-use database `laravel_w_migration`;
+use `laravel_w_migration`;
 --
 
 -- --------------------------------------------------------
