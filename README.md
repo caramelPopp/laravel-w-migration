@@ -4,12 +4,17 @@ Vídeo com o passo-a-passo para baixar e configurar um projeto com o Laravel + B
 - https://youtu.be/fpnmeKkBWRI
 
 <br>
+<br>
 
-Observação -> Utilize o banco de dados preexistente em 'database/laravel-w-migration' para testar a aplicação:
-- Starte o Apache e o MySQL no XAMPP Control Panel
-- Importe o banco para dentro do phpMyAdmin
+## Instruções para testar o projeto
+
+- Garantir que o arquivo 'C:/xampp/php/php.ini' possui a linha 'extension=zip' descomentada (sem ';' antes dela)
+- Startar o Apache e o MySQL no XAMPP Control Panel
+- Importe o banco de dados 'database/laravel-w-migration' para dentro do phpMyAdmin
 - Crie um arquivo '.env' como cópia do arquivo '.env.example'
-- Crie uma chave de conexão da aplicação com o banco de dados a partir do comando 'php artisan key:generate' (garanta que o composer foi instalado corretamente para isso)
+- Instalar o composer com o comando 'composer install'
+- Instalar o NPM com 'npm install'
+- Crie uma chave de conexão da aplicação com o banco de dados a partir do comando 'php artisan key:generate'
 - Efetua as migrações (por precaução) com o comando 'php artisan migrate'
 - Caso tudo tenha dado certo, rode a aplicação digitando o comando 'composer run dev' e abrindo o endereço da aplicação (normalmente http://127.0.0.1:8000)
-- Utilize o login padrão [Nome: Camila de Souza; Email: camila.souza@etec.sp.gov.br; Senha: 12345678] ou crie um novo registro para entrar no sistema efetivamente
+- Utilize o login padrão (Email: rebeca.moura@etec.sp.gov.br; Senha: 12345678) ou crie um novo registro para entrar no sistema efetivamente
