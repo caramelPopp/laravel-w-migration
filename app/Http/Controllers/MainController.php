@@ -24,6 +24,10 @@ class MainController extends Controller
         return view('pages.departments');
     }
 
+    public static function vestibular() {
+        return view('pages.vestibular');
+    }
+
     public static function contact() {
         return view('pages.contact');
     }

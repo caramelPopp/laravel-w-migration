@@ -12,7 +12,7 @@
             <div class="mb-8 bg-white p-6 rounded-lg shadow-md">
                 <h3 class="text-xl font-bold text-etec-red mb-2">Olá, {{ Auth::user()->name }}!</h3>
                 <p class="text-etec-gray-dark">
-                    Seja bem-vindo ao portal da <b>Etec Zona Leste</b>. Aqui você encontrará informações sobre nossos cursos, departamentos e formas de contato.
+                    Seja bem-vindo(a) ao portal da <b>Etec Zona Leste</b>. Aqui você encontrará informações sobre nossos cursos, departamentos e formas de contato. Além disso, você poderá se informar a respeito de nosso vestibulinho de admissão, caso queira fazer parte de nossa comunidade de estudantes.
                 </p>
             </div>
 
@@ -20,7 +20,7 @@
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
 
                 <!-- Card Cursos -->
-                <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition">
+                <div class="bg-white p-6 rounded-lg shadow hover:shadow-xl transition">
                     <h4 class="text-lg font-semibold text-etec-red mb-2">Nossos Cursos</h4>
                     <p class="text-etec-gray-dark mb-4">Conheça todos os cursos técnicos oferecidos por nossa unidade.</p>
                     <a href="{{ route('courses') }}" class="inline-block bg-etec-red text-white px-4 py-2 rounded hover:bg-red-700">
@@ -29,7 +29,7 @@
                 </div>
 
                 <!-- Card Departamentos -->
-                <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition">
+                <div class="bg-white p-6 rounded-lg shadow hover:shadow-xl transition">
                     <h4 class="text-lg font-semibold text-etec-red mb-2">Departamentos</h4>
                     <p class="text-etec-gray-dark mb-4">Veja os setores e coordenações que fazem parte da Etec Zona Leste.</p>
                     <a href="{{ route('departments') }}" class="inline-block bg-etec-red text-white px-4 py-2 rounded hover:bg-red-700">
@@ -38,17 +38,17 @@
                 </div>
 
                 <!-- Card Vestibulinho -->
-                <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition">
+                <div class="bg-white p-6 rounded-lg shadow hover:shadow-xl transition">
                     <h4 class="text-lg font-semibold text-etec-red mb-2">Vestibulinho</h4>
                     <p class="text-etec-gray-dark mb-4">Informações sobre o processo seletivo para novos alunos.</p>
-                    <a href="https://www.vestibulinhoetec.com.br/home/" target="_blank"
+                    <a href="{{ route('vestibular') }}"
                        class="inline-block bg-etec-red text-white px-4 py-2 rounded hover:bg-red-700">
                         Acessar Vestibulinho
                     </a>
                 </div>
 
                 <!-- Card Contato -->
-                <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition">
+                <div class="bg-white p-6 rounded-lg shadow hover:shadow-xl transition">
                     <h4 class="text-lg font-semibold text-etec-red mb-2">Fale Conosco</h4>
                     <p class="text-etec-gray-dark mb-4">Precisa de ajuda? Entre em contato com a nossa equipe.</p>
                     <a href="{{ route('contact') }}" class="inline-block bg-etec-red text-white px-4 py-2 rounded hover:bg-red-700">

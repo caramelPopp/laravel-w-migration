@@ -20,6 +20,11 @@ Route::get(
 )->name('departments');
 
 Route::get(
+    '/vestibular',
+    [MainController::class, 'vestibular']
+)->name('vestibular');
+
+Route::get(
     '/contact',
     [MainController::class, 'contact']
 )->name('contact');
