@@ -29,6 +29,15 @@ Route::get(
     [MainController::class, 'contact']
 )->name('contact');
 
+Route::get(
+    '/contact/send', 
+    [App\Http\Controllers\ContactController::class, 'send']
+)->name('contact.send');
+
+
+Route::fallback(function () {
+    return response()->view('errors.404', [], 404);
+});
 
 Route::get('/dashboard', function () {
     return view('dashboard');

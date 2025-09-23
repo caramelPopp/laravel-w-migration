@@ -27,25 +27,25 @@
 
             <!-- Formulário de contato -->
             <div class="bg-white dark:bg-gray-800 p-6 rounded shadow">
-                <form>
+                <form action="{{ route('contact.send') }}" method="GET">
                     <div class="mb-4">
-                        <label class="block text-gray-700 dark:text-gray-300">Nome</label>
-                        <input type="text" class="w-full mt-1 p-2 border rounded" placeholder="Seu nome">
+                        <label for="nome" class="block text-gray-700 dark:text-gray-300">Nome</label>
+                        <input type="text" name="nome" id="nome" class="w-full mt-1 p-2 border rounded" placeholder="Seu nome">
                     </div>
 
                     <div class="mb-4">
-                        <label class="block text-gray-700 dark:text-gray-300">Email</label>
-                        <input type="email" class="w-full mt-1 p-2 border rounded" placeholder="seu@email.com">
+                        <label for="email" class="block text-gray-700 dark:text-gray-300">Email</label>
+                        <input type="email" name="email" id="email" class="w-full mt-1 p-2 border rounded" placeholder="seu@email.com">
                     </div>
 
                     <div class="mb-4">
-                        <label class="block text-gray-700 dark:text-gray-300">Assunto</label>
-                        <input type="text" class="w-full mt-1 p-2 border rounded" placeholder="Assunto da mensagem">
+                        <label for="assunto" class="block text-gray-700 dark:text-gray-300">Assunto</label>
+                        <input type="text" name="assunto" id="assunto" class="w-full mt-1 p-2 border rounded" placeholder="Assunto da mensagem">
                     </div>
 
                     <div class="mb-4">
-                        <label class="block text-gray-700 dark:text-gray-300">Mensagem</label>
-                        <textarea class="w-full mt-1 p-2 border rounded" rows="4" placeholder="Escreva sua mensagem..."></textarea>
+                        <label for="mensagem" class="block text-gray-700 dark:text-gray-300">Mensagem</label>
+                        <textarea name="mensagem" id="mensagem" class="w-full mt-1 p-2 border rounded" rows="4" placeholder="Escreva sua mensagem..."></textarea>
                     </div>
 
                     <button type="submit" class="inline-block bg-etec-red text-white px-4 py-2 rounded hover:bg-red-700">Enviar Mensagem</button>
