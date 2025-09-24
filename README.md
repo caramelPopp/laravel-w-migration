@@ -1,20 +1,87 @@
-## Instruções de instalação e configuração do Laravel + Breeze
+## ✍ Requisitos iniciais
+### Clonar o repositório
+```bash
+git clone https://github.com/caramelPopp/laravel-w-migration.git
+```
 
+### Conferir se o arquivo 'C:/xampp/php/php.ini' possui a linha 'extension=zip' descomentada 
+![Linha descomentada](prints/zip-descoment.png)
+
+### Startar o Apache e o MySQL no XAMPP Control Panel
+![XAMPP Controll Panel](prints/controll-pane.png)
+
+### Importe o banco de dados 'database/laravel-w-migration' para dentro do phpMyAdmin
+![Banco importado](prints/import-bd.png)
+
+---
+
+## 🚀 Como rodar o projeto
+### 1. Instalar as dependências
+```bash
+composer install
+```
+
+### 2. Configurar o `.env`
+```bash
+cp .env.example .env  
+php artisan key:generate
+```
+
+### 3. Rodar a aplicação
+```bash
+composer run dev
+```
+
+### 4. Acessar no navegador
+```bash
+http://127.0.0.1:8000
+```
+
+### 5. Criar um usuário ou usar o login padrão
+- Cadastro
+![Cadastro](prints/cadastro-site.png)
+<br>
+
+- Login padrão
+![Login padrão](prints/login-site.png)
+---
+
+### 🎬 Instruções alternativas
 Vídeo com o passo-a-passo para baixar e configurar um projeto com o Laravel + Breeze, além de um 'tour' pelo site criado a partir destas ferramentas:
-- https://youtu.be/fpnmeKkBWRI
 
-<br>
-<br>
+https://youtu.be/fpnmeKkBWRI
 
-## Instruções para testar o projeto
+---
 
-- Garantir que o arquivo 'C:/xampp/php/php.ini' possui a linha 'extension=zip' descomentada (sem ';' antes dela)
-- Startar o Apache e o MySQL no XAMPP Control Panel
-- Importe o banco de dados 'database/laravel-w-migration' para dentro do phpMyAdmin
-- Crie um arquivo '.env' como cópia do arquivo '.env.example'
-- Instalar o composer com o comando 'composer install'
-- Instalar o NPM com 'npm install'
-- Crie uma chave de conexão da aplicação com o banco de dados a partir do comando 'php artisan key:generate'
-- Efetua as migrações (por precaução) com o comando 'php artisan migrate'
-- Caso tudo tenha dado certo, rode a aplicação digitando o comando 'composer run dev' e abrindo o endereço da aplicação (normalmente http://127.0.0.1:8000)
-- Utilize o login padrão (Email: rebeca.moura@etec.sp.gov.br; Senha: 12345678) ou crie um novo registro para entrar no sistema efetivamente
+## 🛠️ Funcionalidades implementadas
+
+### Rota Fallback
+Criação de uma rota fallback personalizada para exibir a mensagem de erro **Erro 404 ❌** em caso de páginas inexistentes ou não encontradas.  
+
+- Criação da rota
+![Rota Fallback](prints/web-fallback.png)
+
+- Exibição da rota
+![Página Fallback](prints/fallback-page.png)
+
+
+### Implementação do método GET ao formulário de contato
+Formulário criado na página de contato, configurado para enviar dados pela URL.  
+
+- Criação da rota do GET
+![Rota do GET](prints/web-forms.png)
+
+- Exibição do formulário
+![Formulário](prints/forms.png)
+
+- Formulário com dados para testar o método GET
+![Formulário com dados](prints/forms-get.png)
+
+### Exibição com `var_dump($_GET)`
+Controller configurado para exibir os parâmetros enviados pelo formulário de forma "crua", conforme exigência da tarefa.  
+
+- Controller do formulário
+![Print do ContactControler](prints/print-controller.png)
+
+- Página com resultados do GET e var_dump
+![Exibição do var_dump](prints/result-var_dump.png)
