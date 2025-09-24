@@ -38,11 +38,13 @@ http://127.0.0.1:8000
 ```
 
 ### 5. Criar um usuário ou usar o login padrão
-- Cadastro
+*Cadastro*
+<br>
 ![Cadastro](prints/cadastro-site.png)
 <br>
 
-- Login padrão
+*Login padrão*
+<br>
 ![Login padrão](prints/login-site.png)
 ---
 
@@ -58,30 +60,37 @@ https://youtu.be/fpnmeKkBWRI
 ### Rota Fallback
 Criação de uma rota fallback personalizada para exibir a mensagem de erro **Erro 404 ❌** em caso de páginas inexistentes ou não encontradas.  
 
-- Criação da rota
+*Criação da rota*
+<br>
 ![Rota Fallback](prints/web-fallback.png)
 
-- Exibição da rota
+*Exibição da rota*
+<br>
 ![Página Fallback](prints/fallback-page.png)
 
 
 ### Implementação do método GET ao formulário de contato
 Formulário criado na página de contato, configurado para enviar dados pela URL.  
 
-- Criação da rota do GET
+*Criação da rota do GET*
+<br>
 ![Rota do GET](prints/web-forms.png)
 
-- Exibição do formulário
+*Exibição do formulário*
+<br>
 ![Formulário](prints/forms.png)
 
-- Formulário com dados para testar o método GET
+*Formulário com dados para testar o método GET*
+<br>
 ![Formulário com dados](prints/forms-get.png)
 
 ### Exibição com `var_dump($_GET)`
 Controller configurado para exibir os parâmetros enviados pelo formulário de forma "crua", conforme exigência da tarefa.  
 
-- Controller do formulário
+*Controller do formulário*
+<br>
 ![Print do ContactControler](prints/print-controller.png)
 
-- Página com resultados do GET e var_dump
+*Página com resultados do GET e var_dump*
+<br>
 ![Exibição do var_dump](prints/result-var_dump.png)
