@@ -59,7 +59,7 @@ https://youtu.be/fpnmeKkBWRI
 
 ## 🛠️ Funcionalidades implementadas
 
-### Rota Fallback
+### 🔂 Rota Fallback
 Criação de uma rota fallback personalizada para exibir a mensagem de erro **Erro 404 ❌** em caso de páginas inexistentes ou não encontradas.  
 
 **Criação da rota**
@@ -72,7 +72,7 @@ Criação de uma rota fallback personalizada para exibir a mensagem de erro **Er
 ![Página Fallback](prints/fallback-page.png)
 
 
-### Implementação do método GET ao formulário de contato
+### 🔷 Implementação do método GET ao formulário de contato
 Formulário criado na página de contato, configurado para enviar dados pela URL.  
 
 **Criação da rota do GET**
@@ -89,7 +89,7 @@ Formulário criado na página de contato, configurado para enviar dados pela URL
 <br>
 ![Formulário com dados](prints/forms-get.png)
 
-### Exibição com `var_dump($_GET)`
+### 🗨 Exibição com `var_dump($_GET)`
 Controller configurado para exibir os parâmetros enviados pelo formulário de forma "crua", conforme exigência da tarefa.  
 
 **Controller do formulário**
